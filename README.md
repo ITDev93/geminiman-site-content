@@ -1,40 +1,59 @@
-# GeminiMan Website Content and Roadmaps
+<div align="center">
 
-Welcome to the public content repository for [GeminiMan](https://geminiman.net), an independent collection of Android and Wear OS applications, watch faces, research projects, and practical software ideas.
+<a href="https://geminiman.net/"><img src="assets/geminiman-roadmap-banner.svg" alt="GeminiMan. Ideas worth building. Projects, roadmaps and future possibilities." width="100%"></a>
 
-I maintain this repository as **GeminiMan / XDA-Dante63** to make development plans easier to follow. It shows what I am building now, what is waiting its turn, and which milestones have been completed. It is a living plan, not a schedule of guaranteed release dates.
+### A little space for everything I am building.
 
-## What lives here
+**[Visit GeminiMan.net](https://geminiman.net/)** &nbsp;·&nbsp; [Explore the projects](https://geminiman.net/#projects) &nbsp;·&nbsp; [See the roadmap](https://geminiman.net/#roadmap)
 
-| File | Contents |
-| --- | --- |
-| [`data/public-roadmap.json`](data/public-roadmap.json) | Project directory, completion states, milestones, priorities, and the post-BP research sequence. |
-| [`data/site-copy.json`](data/site-copy.json) | Public introduction, developer story, quotes, optional support destinations, social destinations, and the featured project-page summaries. |
+</div>
 
-The website uses GitHub-hosted copies of these files and keeps a bundled fallback for network outages. Google Play catalog updates, server code, app-specific privacy disclosures, and backend crawler operations remain on the website infrastructure. This repository contains **no API keys, server access, personal identification details, or private research datasets**.
+---
 
-## Editing content
+### Why this page exists
 
-1. Open a JSON file above and choose **Edit**.
-2. Change the text or the milestone status. Keep the same field names and `schemaVersion` values.
-3. Update `lastUpdated` in the edited file, use **Preview**, then commit after reviewing the public text.
-4. The staging site reads published data automatically. GitHub Pages may need a few minutes to refresh, and existing browser caches may briefly retain the previous version.
+This repository has **one purpose**: to provide [GeminiMan.net](https://geminiman.net/) with the public content behind its **projects, roadmaps, development progress and future ideas**.
 
-Use `phase` values `now`, `next`, or `later` for roadmap items. Completed project statuses should contain `complete`, `completed`, `done`, or `finished` to receive the website's green badge. Unreleased concepts must remain clearly distinguished from released applications. Do not publish sensitive health measurements, private beta data, release dates presented as promises, or identifying personal information.
+It is the website's little notebook. As I complete a milestone, revisit an idea or introduce a new project, I can update the information here so visitors can follow the journey on GeminiMan.net. This is **not** a separate app, download page or software source-code collection.
 
-## Follow the work
+### Where things stand
 
-- [GeminiMan website](https://geminiman.net/)
-- [Wellness Companion's illustrated roadmap](https://github.com/ITDev93/Geminiman-Wellness-Companion/tree/main/roadmap)
-- [WearOS Manager](https://github.com/ITDev93/Geminiman-WearOS-Manager)
-- [Released applications and watch faces](https://play.google.com/store/apps/dev?id=7888616598517940731)
+| Right now | After that | Further ahead |
+| :--- | :--- | :--- |
+| **Wellness Companion**. Experimental blood pressure research is my main focus. Reliability and validation need time. | **A little pause**. Time to rest after the current research milestone. | **Back to the workshop**. More wellness features, WearOS Manager screen mirroring, Journal, Clock Chimes and other everyday tools. |
 
-## Optional support
+There are plenty of ideas, but no artificial countdowns. Plans may change, and experimental features are not promises of a release date.
 
-Everything I share is built with the community in mind. There are no advertising requirements or mandatory subscriptions.
+### Enjoying the projects? Help keep them going.
 
-- [Patreon](https://www.patreon.com/xda_dante63)
-- [PayPal](https://paypal.me/dante63)
-- [Google Play support app](https://play.google.com/store/apps/details?id=com.geminiman.watchfaces)
+I build and share these projects because I enjoy creating things that people can actually use. I try to keep my work accessible, without ads or mandatory subscriptions. If something I have made has been useful to you, **optional support helps me continue developing, testing and maintaining it**.
 
-Thank you for using the projects, reporting problems, sharing ideas, and helping independent development continue.
+<div align="center">
+
+<a href="https://www.patreon.com/xda_dante63"><img src="https://img.shields.io/badge/Patreon-Become_a_supporter-F96854?style=for-the-badge&logo=patreon&logoColor=white" alt="Support GeminiMan on Patreon"></a>
+&nbsp;
+<a href="https://paypal.me/dante63"><img src="https://img.shields.io/badge/PayPal-One--time_support-1671B9?style=for-the-badge&logo=paypal&logoColor=white" alt="Support GeminiMan through PayPal"></a>
+&nbsp;
+<a href="https://play.google.com/store/apps/details?id=com.geminiman.watchfaces"><img src="https://img.shields.io/badge/Google_Play-Support_app-338E7B?style=for-the-badge&logo=googleplay&logoColor=white" alt="Support GeminiMan with the Google Play app"></a>
+
+**No obligation, ever.** Trying the apps, sharing them with friends, reporting issues and sending suggestions are meaningful ways to help, too.
+
+Thank you for being part of this journey.
+
+</div>
+
+<details>
+<summary><strong>Curious about how the website stays up to date?</strong></summary>
+
+The website reads two small public content files from this repository:
+
+| Content | What visitors see |
+| :--- | :--- |
+| [`data/public-roadmap.json`](data/public-roadmap.json) | Projects, progress labels, milestones and future plans. |
+| [`data/site-copy.json`](data/site-copy.json) | Introductions, project stories, quotes and support links. |
+
+The site can use its own bundled copies if the GitHub content is temporarily unavailable. App downloads, privacy policies and the Google Play catalog are handled separately by GeminiMan.net.
+
+</details>
+
+<div align="center"><sub>Made with care for the community. · GeminiMan / XDA-Dante63</sub></div>
