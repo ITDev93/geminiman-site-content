@@ -1,0 +1,98 @@
+{
+  "schemaVersion": 1,
+  "lastUpdated": "2026-11-06",
+  "identity": {
+    "publicName": "GeminiMan",
+    "alias": "XDA-Dante63",
+    "contact": "developer@geminiman.net"
+  },
+  "home": {
+    "heroEyebrow": "INDEPENDENT SOFTWARE",
+    "heroTitle": "Curiosity built it.",
+    "heroEmphasis": "Purpose keeps it going.",
+    "heroLead": "What began as a hobby grew into a collection of Android and Wear OS tools, watch faces, and experiments. Built carefully, shared openly, and always with people in mind.",
+    "introHeading": "More than apps.",
+    "introEmphasis": "Work worth sharing.",
+    "introFirst": "I have always believed useful technology should feel welcoming, respectful, and free of unnecessary barriers.",
+    "introSecond": "Some projects are actively improving. Others are waiting while I focus on something especially important: researching blood pressure estimation for Wellness Companion.",
+    "featuredLead": "The two projects currently shaping what comes next.",
+    "wellnessFeatured": "ECG features and experimental blood pressure estimation. Right now the priority is improving signal quality, model reliability, and real-world validation.",
+    "wellnessFeaturedFoot": "BP V3 research · Experimental testing",
+    "managerFeatured": "A practical collection of watch-management and wireless ADB tools. Screen mirroring is on the roadmap alongside continued compatibility and interface work.",
+    "workshopHeading": "One workshop. Many ideas worth building.",
+    "workshopLead": "Explore tools, future releases and experiments waiting behind the scenes, from a quiet clock chime to a more capable file manager. Some already exist; others are concepts I hope to explore. Wellness Companion has my attention first.",
+    "releasedLead": "Explore applications and watch faces directly from my Play Store catalog.",
+    "roadmapLead": "Follow the work by project, from today's priorities to features waiting their turn. Each project has its own journey.",
+    "nextChapterTitle": "First, finish the research. Then breathe. Then build again.",
+    "nextChapterLead": "Not a countdown and not a promise of release dates. Just an honest look at how I intend to approach the work.",
+    "roadmapDisclaimer": "Roadmap statuses represent development priorities, not guaranteed release dates. In particular, experimental health features are not represented as clinically validated.",
+    "storyTitle": "A person behind every line of code",
+    "storyParagraphs": [
+      "Hi, I'm GeminiMan, also known as XDA-Dante63. What started as curiosity and a hobby became a way of solving real problems and sharing useful tools with the community.",
+      "Many people first discovered my work through SHM Mod. I created and maintained that project until the end of its journey. But when SHM Mod's chapter ended, my passion for building things did not end with it.",
+      "I carried that experience forward into my own Android and Wear OS projects, including Wellness Companion, WearOS Manager, small everyday utilities and watch faces. Some projects are already in people's hands. Others are ideas waiting for their moment.",
+      "Behind every release are evenings of research, testing, translation and fixing the details that make software feel right. It's time I could spend elsewhere, but I keep returning to development because I still enjoy it and hope it makes someone's day a little easier."
+    ],
+    "supportIntro": "I could have made these apps paid products. Instead, I chose to make useful work available without ads or mandatory subscriptions and trust that people who are able to help might choose to do so.",
+    "supportOneDollar": "Even $1 a month from someone who finds the projects useful can make a real difference over time. It helps me spend more time building, maintaining, testing, and gradually creating a more stable life.",
+    "supportThanks": "There is no obligation. Using the apps, sharing them, reporting problems, and leaving thoughtful feedback are valuable contributions too. Thank you for being part of this journey.",
+    "supportLinks": {
+      "patreon": "https://www.patreon.com/xda_dante63",
+      "paypal": "https://paypal.me/dante63",
+      "googlePlay": "https://play.google.com/store/apps/details?id=com.geminiman.watchfaces"
+    },
+    "socialLinks": {
+      "googlePlay": "https://play.google.com/store/apps/dev?id=7888616598517940731",
+      "xda": "https://forum.xda-developers.com/m/dante63.7047928/",
+      "github": "https://github.com/ITDev93",
+      "youtube": "https://www.youtube.com/user/EvilDante63",
+      "instagram": "https://www.instagram.com/geminimanco/",
+      "telegram": "https://t.me/DanteHunter"
+    },
+    "footerMotto": "Made with care for the community."
+  },
+  "quotes": [
+    {"text":"Life is one hell of a roller-coaster ride, you need to enjoy the ups and brace yourself for the downs...","credit":"Dante"},
+    {"text":"Life is Filled with Possibilities, don't turn them into Impossibilities...","credit":"Dante"},
+    {"text":"Never judge someone by the way he looks or a book by the way it's covered; for inside those tattered pages, there's a lot to be discovered...","credit":"Steve Cosgrove"},
+    {"text":"Curiosity about life in all of its aspects, I think, is still the secret of great creative people.","credit":"Leo Burnett"},
+    {"text":"Never look at someone's flaws and judge or leave, see the good within, after all everyone has flaws even you...","credit":"Dante"},
+    {"text":"The best way to predict your future is to create it.","credit":"Attributed to Abraham Lincoln"},
+    {"text":"If you have knowledge, let others light their candles in it...","credit":"Margaret Fuller"},
+    {"text":"Life is like riding a bicycle. To keep your balance, you must keep moving...","credit":"Attributed to Albert Einstein"},
+    {"text":"I hated every minute of training, but I said, ‘Don’t quit. Suffer now and live the rest of your life as a champion...’","credit":"Muhammad Ali"}
+  ],
+  "details": {
+    "wellness-companion": {
+      "eyebrow": "PROJECT 01 · ANDROID + WEAR OS · ACTIVE RESEARCH",
+      "lead": "A personal wellness project built around wearable ECG recording and experimental blood pressure estimation. The ambition is meaningful, but reliable measurements take careful research and validation.",
+      "heading": "Building the foundations carefully.",
+      "paragraphs": [
+        "Wellness Companion is a phone-and-watch project with ECG tools, profiles, measurement history, backup and restore, and experimental blood pressure workflows. It is currently being evaluated in a closed beta.",
+        "Blood pressure research is the priority. Work has moved to a third experimental model generation, with more varied PPG recordings, signal-quality investigation, subject-separated evaluation and comparison with cuff references. No wearable estimate has been established as a replacement for a validated cuff."
+      ],
+      "steps": [
+        {"stage":"01 · In progress","title":"Research the BP V3 model","description":"Evaluate the new hybrid research approach, improve signal quality and reduce systematic estimation errors using carefully separated datasets."},
+        {"stage":"02 · Validation","title":"Collect and compare more real measurements","description":"Continue comparison with reference cuff readings and varied recording conditions, while communicating uncertainty clearly."},
+        {"stage":"03 · After sufficient evidence","title":"Refine the user-facing experience","description":"Use validation results to guide reliability, transparency and the broader beta experience."}
+      ],
+      "facts": ["Closed beta · Experimental research", "Android phone and supported Wear OS watches", "PPG signal quality, calibration workflows and BP V3 model validation", "Roadmap reviewed 6 November 2026"],
+      "publishedRoadmapLead": "The complete illustrated Wellness Companion roadmap is published on GitHub. Phase targets are historical planning estimates, not release guarantees."
+    },
+    "wearos-manager": {
+      "eyebrow": "PROJECT 02 · ANDROID + WEAR OS · ACTIVE PRODUCT",
+      "lead": "Manage your Wear OS watch through wireless ADB, with tools for applications, shell commands, backups, logs and diagnostics. The next ambitious idea is practical watch-screen mirroring.",
+      "heading": "Make powerful tools approachable.",
+      "paragraphs": [
+        "WearOS Manager brings common ADB tasks into a friendlier phone-and-watch experience. It helps users connect through wireless debugging, manage installed packages, work with backups, capture logs, and run commands without constantly retyping them.",
+        "Recent work has centered on Android compatibility, connection reliability, incremental application details, discovery, performance, translations, and clear interactions on phone and watch screens."
+      ],
+      "steps": [
+        {"stage":"01 · Ongoing","title":"Keep connections predictable","description":"Polish automatic discovery, manual pairing, cancellation, efficient app details and permission handling across supported Android and Wear OS releases."},
+        {"stage":"02 · Planned exploration","title":"Watch screen mirroring","description":"Investigate a reliable way to show a connected watch screen on a phone. This is planned work, not a released feature or promised date."},
+        {"stage":"03 · Later","title":"Continue usability improvements","description":"Refine diagnostics, everyday workflows and accessibility as feedback comes in."}
+      ],
+      "facts": ["Released · Maintained", "Android phone and Wear OS companion", "Wireless ADB, package management, backup workflows and log collection", "Watch screen mirroring (feasibility and implementation pending)"]
+    }
+  }
+}
