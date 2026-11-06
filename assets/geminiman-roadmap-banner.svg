@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="310" viewBox="0 0 1080 310" role="img" aria-labelledby="title desc">
+  <title id="title">GeminiMan. Ideas worth building.</title>
+  <desc id="desc">A deep blue starry illustration representing public projects, roadmaps and future possibilities.</desc>
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0c1732"/>
+      <stop offset=".5" stop-color="#162343"/>
+      <stop offset="1" stop-color="#101329"/>
+    </linearGradient>
+    <linearGradient id="line" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#66d7d8"/>
+      <stop offset="1" stop-color="#bb91f5"/>
+    </linearGradient>
+    <radialGradient id="glow">
+      <stop offset="0" stop-color="#6c78dc" stop-opacity=".34"/>
+      <stop offset="1" stop-color="#6c78dc" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="smallstars" width="92" height="79" patternUnits="userSpaceOnUse">
+      <circle cx="17" cy="21" r="1.2" fill="#eaf9ff" opacity=".46"/>
+      <circle cx="66" cy="58" r=".9" fill="#b2caff" opacity=".32"/>
+    </pattern>
+  </defs>
+  <rect width="1080" height="310" rx="25" fill="url(#sky)"/>
+  <rect width="1080" height="310" rx="25" fill="url(#smallstars)"/>
+  <ellipse cx="880" cy="100" rx="320" ry="250" fill="url(#glow)"/>
+  <path d="M45 25H1035M45 285H1035" stroke="#bed7ff" stroke-opacity=".11"/>
+  <rect x="61" y="44" width="8" height="8" rx="2" transform="rotate(45 65 48)" fill="#71d8d9"/>
+  <text x="82" y="54" fill="#a5e5e6" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="700" letter-spacing="4">GEMINIMAN</text>
+  <text x="61" y="126" fill="#fff" font-family="Arial, Helvetica, sans-serif" font-weight="700" font-size="49">Ideas worth building.</text>
+  <text x="63" y="166" fill="#bac9e4" font-family="Arial, Helvetica, sans-serif" font-size="20">A home for projects, roadmaps and what comes next.</text>
+  <rect x="61" y="204" width="166" height="41" rx="20" fill="#192e45" stroke="#67cfd0" stroke-opacity=".5"/>
+  <circle cx="83" cy="224" r="5" fill="#73dcd2"/>
+  <text x="98" y="230" fill="#d8f7f4" font-family="Arial, Helvetica, sans-serif" font-size="16">Projects</text>
+  <rect x="241" y="204" width="166" height="41" rx="20" fill="#24213e" stroke="#aa90ed" stroke-opacity=".5"/>
+  <path d="M261 224h17m-6-5 6 5-6 5" fill="none" stroke="#ba9cff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="286" y="230" fill="#eae1ff" font-family="Arial, Helvetica, sans-serif" font-size="16">Roadmaps</text>
+  <rect x="421" y="204" width="189" height="41" rx="20" fill="#283044" stroke="#edcb91" stroke-opacity=".46"/>
+  <path d="m444 216 2 6 6 2-6 2-2 6-2-6-6-2 6-2z" fill="#f2cf8d"/>
+  <text x="460" y="230" fill="#f6e8c9" font-family="Arial, Helvetica, sans-serif" font-size="16">Future ideas</text>
+  <g fill="none" stroke="url(#line)" stroke-width="2.5" opacity=".67">
+    <path d="M762 91 861 53 975 116 904 217 771 195 762 91"/>
+    <path d="M762 91 904 217M861 53 771 195M975 116 771 195" stroke-opacity=".43"/>
+  </g>
+  <g>
+    <circle cx="762" cy="91" r="9" fill="#7cddd8"/>
+    <circle cx="861" cy="53" r="6" fill="#f3d6a5"/>
+    <circle cx="975" cy="116" r="8" fill="#b99cff"/>
+    <circle cx="904" cy="217" r="11" fill="#8cbcf2"/>
+    <circle cx="771" cy="195" r="6" fill="#f3d6a5"/>
+    <circle cx="861" cy="53" r="14" fill="none" stroke="#f3d6a5" stroke-opacity=".28"/>
+    <circle cx="904" cy="217" r="21" fill="none" stroke="#8cbcf2" stroke-opacity=".2"/>
+  </g>
+  <path d="M729 263H987" stroke="#adc7f9" stroke-opacity=".15"/>
+  <text x="990" y="267" fill="#92a2c8" font-family="Arial, Helvetica, sans-serif" font-size="11" letter-spacing="2" text-anchor="end">ALWAYS EVOLVING</text>
+</svg>
