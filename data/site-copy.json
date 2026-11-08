@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "lastUpdated": "2026-11-06",
+  "lastUpdated": "2026-11-09",
   "identity": {
     "publicName": "GeminiMan",
     "alias": "XDA-Dante63",
@@ -16,8 +16,8 @@
     "introFirst": "I have always believed useful technology should feel welcoming, respectful, and free of unnecessary barriers.",
     "introSecond": "Some projects are actively improving. Others are waiting while I focus on something especially important: researching blood pressure estimation for Wellness Companion.",
     "featuredLead": "The two projects currently shaping what comes next.",
-    "wellnessFeatured": "ECG features and experimental blood pressure estimation. Right now the priority is improving signal quality, model reliability, and real-world validation.",
-    "wellnessFeaturedFoot": "BP V3 research · Experimental testing",
+    "wellnessFeatured": "ECG reached public beta in June 2026, and experimental BP entered closed testing in October. My current priority is Aurora V3 signal quality, calibration and comparison with cuff readings.",
+    "wellnessFeaturedFoot": "Aurora BP V3 · Experimental validation",
     "managerFeatured": "A practical collection of watch-management and wireless ADB tools. Screen mirroring is on the roadmap alongside continued compatibility and interface work.",
     "workshopHeading": "One workshop. Many ideas worth building.",
     "workshopLead": "Explore tools, future releases and experiments waiting behind the scenes, from a quiet clock chime to a more capable file manager. Some already exist; others are concepts I hope to explore. Wellness Companion has my attention first.",
@@ -68,15 +68,15 @@
       "lead": "A personal wellness project built around wearable ECG recording and experimental blood pressure estimation. The ambition is meaningful, but reliable measurements take careful research and validation.",
       "heading": "Building the foundations carefully.",
       "paragraphs": [
-        "Wellness Companion is a phone-and-watch project with ECG tools, profiles, measurement history, backup and restore, and experimental blood pressure workflows. It is currently being evaluated in a closed beta.",
-        "Blood pressure research is the priority. Work has moved to a third experimental model generation, with more varied PPG recordings, signal-quality investigation, subject-separated evaluation and comparison with cuff references. No wearable estimate has been established as a replacement for a validated cuff."
+        "Closed ECG testing began in March 2026, followed by a public ECG beta in June. I spent July hunting for suitable BP datasets. In August, a GPU fan failure and SSD thermal problems interrupted the work; after repairs, I resumed BP V1 research in September.",
+        "BP closed testing began around early October. Late October brought BP V2 experiments and the major phone interface revamp, including Classic, Material and One UI themes. In November, I moved into Aurora V3 research and possible V4 improvements. I hope December can bring a more stable experimental BP release, but only if real-world cuff comparisons and validation support it. BP estimates are not clinically validated."
       ],
       "steps": [
-        {"stage":"01 · In progress","title":"Research the BP V3 model","description":"Evaluate the new hybrid research approach, improve signal quality and reduce systematic estimation errors using carefully separated datasets."},
+        {"stage":"01 · In progress","title":"Evaluate Aurora BP V3 and potential V4 refinements","description":"Improve signal-quality handling and study systematic estimation errors using varied PPG data and participant-separated evaluation."},
         {"stage":"02 · Validation","title":"Collect and compare more real measurements","description":"Continue comparison with reference cuff readings and varied recording conditions, while communicating uncertainty clearly."},
-        {"stage":"03 · After sufficient evidence","title":"Refine the user-facing experience","description":"Use validation results to guide reliability, transparency and the broader beta experience."}
+        {"stage":"03 · December 2026 · Hopeful target","title":"Consider a more stable BP release","description":"Only expand experimental BP testing if real-world validation, calibration reliability and signal quality support it. December is a goal, not a guaranteed release date."}
       ],
-      "facts": ["Closed beta · Experimental research", "Android phone and supported Wear OS watches", "PPG signal quality, calibration workflows and BP V3 model validation", "Roadmap reviewed 6 November 2026"],
+      "facts": ["BP closed beta · ECG public beta", "Android phone and supported Wear OS watches", "PPG signal quality, calibration workflows and Aurora V3 research", "Development story updated 9 November 2026"],
       "publishedRoadmapLead": "The complete illustrated Wellness Companion roadmap is published on GitHub. Phase targets are historical planning estimates, not release guarantees."
     },
     "wearos-manager": {
