@@ -20,7 +20,7 @@ It is the website's little notebook. As I complete a milestone, revisit an idea 
 
 | Right now | After that | Further ahead |
 | :--- | :--- | :--- |
-| **Wellness Companion**. Experimental blood pressure research is my main focus. Reliability and validation need time. | **A little pause**. Time to rest after the current research milestone. | **Back to the workshop**. More wellness features, WearOS Manager screen mirroring, Journal, Clock Chimes and other everyday tools. |
+| **Wellness Companion**. Aurora BP V3 and V4 Experimental are being compared side by side in alpha research. Reliability and independent cuff validation are still needed. | **A little pause**. Time to rest after the current research milestone. | **Back to the workshop**. More wellness features, WearOS Manager screen mirroring, Journal, Clock Chimes and other everyday tools. |
 
 There are plenty of ideas, but no artificial countdowns. Plans may change, and experimental features are not promises of a release date.
 
