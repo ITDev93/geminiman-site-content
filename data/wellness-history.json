@@ -1,0 +1,213 @@
+{
+  "schemaVersion": 1,
+  "lastUpdated": "2026-11-21",
+  "heading": {
+    "kicker": "THE DEVELOPMENT STORY · 2025–2026",
+    "title": "How a personal idea became a long research journey.",
+    "intro": "There is a lot more behind Wellness Companion than the latest version number. Some ideas worked. Others needed rewriting, more evidence, or a complete change of direction. This is my account of that journey, including the setbacks that shaped it."
+  },
+  "events": [
+    {
+      "id": "origin",
+      "date": "2025-09",
+      "label": "Late 2025",
+      "status": "The beginning",
+      "topic": "THE ORIGIN",
+      "title": "When one chapter ended, I decided to build my own.",
+      "summary": "After years working on SHM Mod, changes to the ecosystem made continuing that project impractical. I wanted to take what I had learned from Samsung watch sensors and create an independent Android-and-Wear OS wellness experience: one I could maintain, explain, and improve over time.",
+      "detailTitle": "Why start again?",
+      "details": [
+        "It meant accepting the hard parts as well as the freedom: phone/watch communication, sensor readiness, signal processing, measurement history, privacy and careful communication of what a wellness app can and cannot establish. I deliberately built around the supported Samsung Galaxy Watch hardware and available sensor SDKs, rather than promising universal wearable compatibility."
+      ],
+      "kind": "standard"
+    },
+    {
+      "id": "ecg-closed",
+      "date": "2026-03",
+      "label": "March 2026",
+      "status": "Closed testing",
+      "topic": "ECG · PRIVATE TESTING",
+      "title": "ECG became the first serious proving ground.",
+      "summary": "ECG entered closed testing in March. The priority was not just displaying a waveform, but making a 30-second recording dependable: a 500 Hz acquisition path, sensor-ready countdowns, finger-contact checks, timeouts, and clear cancellation or retry behavior when a recording could not be trusted.",
+      "detailTitle": "What made ECG recording more stable?",
+      "details": [
+        "A 20-second heart-rate warmup helped prepare the watch; the 3-second steady-position countdown began only after sensor readiness and contact, with a separate 5-second option. Samples from the countdown did not enter the recording. Contact loss, excessive noise and stalled measurements had to end in clear outcomes instead of silently producing misleading results.",
+        "These improvements concern acquisition reliability and signal quality. They are not a claim that an ECG interpretation is medically diagnostic."
+      ],
+      "kind": "standard"
+    },
+    {
+      "id": "ecg-public",
+      "date": "2026-06",
+      "label": "June 2026",
+      "status": "Public beta",
+      "topic": "ECG · PUBLIC BETA",
+      "title": "From closed testers to a public beta.",
+      "summary": "In June, the ECG-focused Wellness Companion reached public beta. By then, recording, viewing results, measurement history and the surrounding phone/watch workflow had become much more mature. Feedback still mattered: a reliable recording flow is something earned through repeated testing, not assumed from a successful demonstration.",
+      "detailTitle": "What does ECG stability mean here?",
+      "details": [
+        "There are several separate pieces: acquiring a complete signal, recognizing contact or noise problems, storing the result correctly, and presenting an understandable explanation. The app developed explainable signal-quality indicators alongside ECG analysis. A completed, good-quality recording is still wellness information, not a medical diagnosis or a substitute for a clinical ECG assessment."
+      ],
+      "kind": "standard"
+    },
+    {
+      "id": "dataset-hunt",
+      "date": "2026-07",
+      "label": "July 2026",
+      "status": "Research begins",
+      "topic": "BP · DATASET HUNT",
+      "title": "Before training a blood pressure model, I had to find the data.",
+      "summary": "July was spent hunting for suitable paired waveform and blood pressure data. A pulse waveform alone is not a reference BP reading. I needed to investigate public research datasets, signal formats, sample rates, cuff or arterial-pressure reference quality, participant separation and whether anything learned from them could transfer to a Galaxy Watch.",
+      "detailTitle": "Why was finding data so difficult?",
+      "details": [
+        "Research waveforms are not interchangeable with wrist PPG captured in daily life. Sampling differences, noisy recordings, missing pairs and duplicated participants can make a model look better on paper than it behaves on a person. That gap between laboratory data and an actual watch became a recurring theme in later experiments."
+      ],
+      "kind": "standard"
+    },
+    {
+      "id": "hardware-setback",
+      "date": "2026-08",
+      "label": "August 2026",
+      "status": "A real setback",
+      "topic": "BEHIND THE SCENES",
+      "title": "Before V1 could move forward, the development laptop failed.",
+      "summary": "A GPU fan failure and an SSD thermal failure disrupted the planned BP work in August. Development had to pause while I dealt with the hardware problems. The setback delayed the project and pushed later roadmap phases back; it was not a model-quality result or a reason to claim that research data had been lost.",
+      "detailTitle": "How that changed the roadmap",
+      "details": [
+        "Blood pressure research took priority over later wellness features, and I revised the schedule instead of pretending the original dates still applied. Fixing the laptop and getting the development environment working again came before returning to the BP model."
+      ],
+      "kind": "setback"
+    },
+    {
+      "id": "bp-v1",
+      "date": "2026-09",
+      "label": "September 2026",
+      "status": "Development resumed",
+      "topic": "BP V1 · MODEL DEVELOPMENT",
+      "title": "After the repair, I returned to the first BP model.",
+      "summary": "Once the laptop was repaired, September became the period of renewed V1 research and development. I worked on translating PPG features into experimental systolic and diastolic estimates, comparing predictions with cuff readings, and building a calibration workflow around repeated reference measurements.",
+      "detailTitle": "What V1 taught me",
+      "details": [
+        "V1 made the end-to-end experiment possible, but its weaknesses were real: diastolic readings often came out too low, systolic readings could be elevated, and signal quality varied. The calibration experience eventually developed three required reference readings with two optional extras, a 28-day validity window and wrist-consistency safeguards. Even with calibration, a plausible-looking number cannot be assumed accurate."
+      ],
+      "kind": "standard"
+    },
+    {
+      "id": "bp-closed",
+      "date": "2026-10",
+      "label": "Early October 2026",
+      "status": "Closed BP testing",
+      "topic": "BP · CLOSED TESTING",
+      "title": "Real wrists and real cuffs exposed the difficult cases.",
+      "summary": "Around the beginning of October, BP entered closed testing. People compared the watch's experimental estimates with readings from a separate blood pressure cuff. Repeated recordings, calibration integrity, wrist selection and the conditions around each measurement mattered just as much as the number displayed on the screen.",
+      "detailTitle": "Why the cuff comparisons matter",
+      "details": [
+        "A model can appear consistent while being consistently wrong. Reviewing paired reference readings helps reveal bias and spread across different people and situations. The app keeps the cuff workflow distinct from the watch estimate. The experimental result is not a replacement for a validated cuff, particularly when accuracy has not been established across a suitable population."
+      ],
+      "kind": "standard"
+    },
+    {
+      "id": "bp-v2",
+      "date": "2026-10",
+      "label": "Late October 2026",
+      "status": "Research-only",
+      "topic": "BP V2 · RETHINKING THE MODEL",
+      "title": "A stronger-looking research pipeline met a stubborn watch reality.",
+      "summary": "V2 explored a larger, more disciplined dataset pipeline, including MIMIC-III Extended PPG, resampling to 100 Hz, subject-blocked evaluation and stronger signal-quality screening. Yet many real on-watch recordings were classified as low signal. That mismatch made V2 unsuitable for replacing the active measurement workflow, so it remained research-only and was retired.",
+      "detailTitle": "What I carried forward from V2",
+      "details": [
+        "Separating participants between training and evaluation helps reduce overly optimistic results. Keeping waveform sources traceable and auditing rejection reasons matter too. Most importantly, a promising offline metric is not the same as dependable wrist performance. Those lessons shaped the design of V3."
+      ],
+      "kind": "standard"
+    },
+    {
+      "id": "interface-revamp",
+      "date": "2026-10",
+      "label": "Late October 2026",
+      "status": "New experience",
+      "topic": "PHONE + WATCH · INTERFACE REVAMP",
+      "title": "The app needed to feel as thoughtful as the research behind it.",
+      "summary": "Alongside model work, I rebuilt much of the phone experience. Classic, Material and One UI appearances, accent palettes, light/dark preferences and immediate previews gave people more choice without changing what their recordings mean. The effort also covered onboarding, dialogs, translations, history screens and more predictable notifications.",
+      "detailTitle": "Design and reliability are connected",
+      "details": [
+        "Readable errors, obvious calibration states and consistent dialogs reduce confusion when a sensor or estimate is unavailable. ECG and BP should notify only when a result is actually ready. Styling is not cosmetic if the interface is how a tester understands uncertainty, retries a failed reading or catches a calibration problem."
+      ],
+      "kind": "standard"
+    },
+    {
+      "id": "bp-v3",
+      "date": "2026-11",
+      "label": "November 2026",
+      "status": "Research milestone",
+      "topic": "BP V3 · AURORA",
+      "title": "V3 brings the lessons together, but it is still experimental.",
+      "summary": "The Aurora V3 work combines lessons from V1 and V2 with a broader hybrid research approach, varied PPG sources, participant-separated evaluation, quality checks and closer attention to systematic systolic/diastolic errors. The model was integrated into development builds for controlled testing.",
+      "detailTitle": "Why a third generation is not the finish line",
+      "details": [
+        "V3 can still return readings that differ noticeably from a cuff. More paired real-world measurements are needed to examine different wrists, signal conditions and calibration ages. These limitations motivated the next experimental iteration. BP V3 is not clinically validated."
+      ],
+      "kind": "standard"
+    },
+    {
+      "id": "bp-v4",
+      "date": "2026-11",
+      "label": "Mid-November 2026",
+      "status": "Experimental development",
+      "topic": "BP V4 · PERSONALIZED RESEARCH",
+      "title": "What if the model learned more from the individual?",
+      "summary": "I began exploring a personalized V4 model, using watch PPG recordings and quality-weighted calibration references. Rather than replacing Aurora V3 immediately, I introduced V4 alongside it so testers could compare the two estimates against separately entered cuff readings.",
+      "detailTitle": "Why keep both models?",
+      "details": [
+        "The side-by-side approach let me investigate how each model behaved using the same watch recording. Early research did not establish V4 as reliably more accurate than V3 or a cuff-only baseline. The differences helped identify questions for the next iteration."
+      ],
+      "kind": "standard"
+    },
+    {
+      "id": "bp-v4-1",
+      "date": "2026-11-21",
+      "label": "November 2026",
+      "status": "Published · Testing underway",
+      "topic": "BP V4.1 · EXPERIMENTAL TESTING",
+      "title": "V4.1 is published, and the testers are joining.",
+      "summary": "BP V4.1 Experimental has been published, and users have started joining the test. I now want to understand how the estimates behave across different people, using real-world watch recordings, cuff references and feedback rather than relying only on the initial research.",
+      "detailTitle": "What the next round of testing means",
+      "details": [
+        "Thank you to everyone who is joining the test. Paired watch and cuff measurements can help investigate reliability, calibration drift and systematic errors. Publication is a research milestone, not proof of improved accuracy or clinical validation. V4.1 remains experimental."
+      ],
+      "kind": "standard"
+    },
+    {
+      "id": "bilateral-screening",
+      "date": "2026-11",
+      "label": "November 2026",
+      "status": "In development",
+      "topic": "BP · CALIBRATION RESEARCH",
+      "title": "A better reference starts with both arms.",
+      "summary": "Tester feedback prompted me to investigate differences between cuff measurements on the two arms. I am developing a bilateral cuff screening workflow before calibration, with explicit same-arm sequential and opposite-arm simultaneous protocols and richer research records. This is development work, not a released feature.",
+      "detailTitle": "Why change the calibration workflow?",
+      "details": [
+        "The aim is to separate reference-measurement differences from model error. The proposed thresholds are experimental, and the comparison still needs independent evaluation. Existing BP estimates remain experimental."
+      ],
+      "kind": "standard"
+    },
+    {
+      "id": "december-goal",
+      "date": "2026-12",
+      "label": "December 2026",
+      "status": "Hopeful target",
+      "topic": "BP · WHAT I HOPE COMES NEXT",
+      "title": "Could December bring a more stable BP release?",
+      "summary": "That is the hope, if all goes well. My goal for December is a more stable experimental BP model and, if the real-world evidence supports it, a broader release. It is a target, not a guarantee: validation, calibration reliability, signal quality and honest communication of uncertainty matter more than meeting a calendar date.",
+      "detailTitle": "What would make that possible?",
+      "details": [
+        "More paired watch/cuff measurements across different people and recording conditions, a careful review of the remaining systematic errors, and enough evidence that the next model behaves more consistently. If those checks do not support release, the responsible choice is to keep improving it rather than publish an unproven promise. A more stable experimental model would still not be a clinically validated alternative to a medical cuff."
+      ],
+      "kind": "future"
+    }
+  ],
+  "next": {
+    "title": "More recordings. Better questions. More honest answers.",
+    "summary": "I want testers to record watch estimates alongside cuff measurements over several days and share their chosen exports for comparison. That feedback may help improve future models, but I would rather show uncertainty clearly than make a promise the evidence cannot support.",
+    "status": "ECG has progressed through closed testing and public beta. BP V4.1 testing is underway. Neither an ECG interpretation nor a wrist BP estimate in this app should be used for diagnosis; a watch estimate is not an alternative to a validated cuff."
+  }
+}
