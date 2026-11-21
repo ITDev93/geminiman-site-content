@@ -52,15 +52,42 @@
     "footerMotto": "Made with care for the community."
   },
   "quotes": [
-    {"text":"Life is one hell of a roller-coaster ride, you need to enjoy the ups and brace yourself for the downs...","credit":"Dante"},
-    {"text":"Life is Filled with Possibilities, don't turn them into Impossibilities...","credit":"Dante"},
-    {"text":"Never judge someone by the way he looks or a book by the way it's covered; for inside those tattered pages, there's a lot to be discovered...","credit":"Steve Cosgrove"},
-    {"text":"Curiosity about life in all of its aspects, I think, is still the secret of great creative people.","credit":"Leo Burnett"},
-    {"text":"Never look at someone's flaws and judge or leave, see the good within, after all everyone has flaws even you...","credit":"Dante"},
-    {"text":"The best way to predict your future is to create it.","credit":"Attributed to Abraham Lincoln"},
-    {"text":"If you have knowledge, let others light their candles in it...","credit":"Margaret Fuller"},
-    {"text":"Life is like riding a bicycle. To keep your balance, you must keep moving...","credit":"Attributed to Albert Einstein"},
-    {"text":"I hated every minute of training, but I said, ‘Don’t quit. Suffer now and live the rest of your life as a champion...’","credit":"Muhammad Ali"}
+    {
+      "text": "Life is one hell of a roller-coaster ride, you need to enjoy the ups and brace yourself for the downs...",
+      "credit": "Dante"
+    },
+    {
+      "text": "Life is Filled with Possibilities, don't turn them into Impossibilities...",
+      "credit": "Dante"
+    },
+    {
+      "text": "Never judge someone by the way he looks or a book by the way it's covered; for inside those tattered pages, there's a lot to be discovered...",
+      "credit": "Steve Cosgrove"
+    },
+    {
+      "text": "Curiosity about life in all of its aspects, I think, is still the secret of great creative people.",
+      "credit": "Leo Burnett"
+    },
+    {
+      "text": "Never look at someone's flaws and judge or leave, see the good within, after all everyone has flaws even you...",
+      "credit": "Dante"
+    },
+    {
+      "text": "The best way to predict your future is to create it.",
+      "credit": "Attributed to Abraham Lincoln"
+    },
+    {
+      "text": "If you have knowledge, let others light their candles in it...",
+      "credit": "Margaret Fuller"
+    },
+    {
+      "text": "Life is like riding a bicycle. To keep your balance, you must keep moving...",
+      "credit": "Attributed to Albert Einstein"
+    },
+    {
+      "text": "I hated every minute of training, but I said, ‘Don’t quit. Suffer now and live the rest of your life as a champion...’",
+      "credit": "Muhammad Ali"
+    }
   ],
   "details": {
     "wellness-companion": {
@@ -73,12 +100,87 @@
         "As of 21 November 2026, I have published BP V4.1 Experimental, and users have started joining the test. Thank you to everyone taking part and helping me understand how the estimates perform outside the initial research. The next step is to gather feedback and paired cuff-reference measurements, compare the results with Aurora V3, and investigate reliability. I hope December can bring a more stable experimental BP release, but only if real-world validation supports it. V4.1 remains experimental and is not clinically validated."
       ],
       "steps": [
-        {"stage":"01 · Testing underway","title":"BP V4.1 Experimental published","description":"Users have started joining the test. Compare V4.1 with Aurora BP V3 using cuff references, gather feedback, and study where each model fails. Improved accuracy has not yet been established."},
-        {"stage":"02 · Validation","title":"Build stronger independent evidence","description":"Collect more paired cuff and watch measurements from participating users, check calibration drift and high-BP errors, and keep experimental uncertainty visible."},
-        {"stage":"03 · December 2026 · Hopeful target","title":"Consider a more stable BP release","description":"Consider a more stable experimental BP release only if real-world validation, calibration reliability and signal quality support it. December is a goal, not a guaranteed release date."}
+        {
+          "stage": "01 · Testing underway",
+          "title": "BP V4.1 Experimental published",
+          "description": "Users have started joining the test. Compare V4.1 with Aurora BP V3 using cuff references, gather feedback, and study where each model fails. Improved accuracy has not yet been established."
+        },
+        {
+          "stage": "02 · Validation",
+          "title": "Build stronger independent evidence",
+          "description": "Collect more paired cuff and watch measurements from participating users, check calibration drift and high-BP errors, and keep experimental uncertainty visible."
+        },
+        {
+          "stage": "03 · December 2026 · Hopeful target",
+          "title": "Consider a more stable BP release",
+          "description": "Consider a more stable experimental BP release only if real-world validation, calibration reliability and signal quality support it. December is a goal, not a guaranteed release date."
+        }
       ],
-      "facts": ["BP V4.1 Experimental testing underway · ECG public beta", "Android phone and supported Wear OS watches", "PPG signal quality, 3–5 calibration recordings and V3/V4.1 comparison", "Development story updated 21 November 2026"],
-      "publishedRoadmapLead": "The complete illustrated Wellness Companion roadmap is published on GitHub. Phase targets are historical planning estimates, not release guarantees."
+      "facts": [
+        "BP V4.1 Experimental testing underway · ECG public beta",
+        "Android phone and supported Wear OS watches",
+        "PPG signal quality, 3–5 calibration recordings and V3/V4.1 comparison",
+        "Development story updated 21 November 2026"
+      ],
+      "publishedRoadmapLead": "The complete illustrated Wellness Companion roadmap is published on GitHub. Phase targets are historical planning estimates, not release guarantees.",
+      "historyTail": [
+        {
+          "id": "bp-v3",
+          "date": "2026-11",
+          "label": "November 2026",
+          "status": "Research milestone",
+          "topic": "BP V3 · AURORA",
+          "title": "V3 brings the lessons together, but it is still experimental.",
+          "summary": "The Aurora V3 work combines lessons from V1 and V2 with a broader hybrid research approach, varied PPG sources, participant-separated evaluation, quality checks and closer attention to systematic systolic/diastolic errors. The model was integrated into development builds for controlled testing.",
+          "detailTitle": "Why a third generation is not the finish line",
+          "details": [
+            "V3 can still return readings that differ noticeably from a cuff. More paired real-world measurements are needed to examine different wrists, signal conditions and calibration ages. These limitations motivated the next experimental iteration. BP V3 is not clinically validated."
+          ],
+          "kind": "standard"
+        },
+        {
+          "id": "bp-v4",
+          "date": "2026-11",
+          "label": "Mid-November 2026",
+          "status": "Experimental development",
+          "topic": "BP V4 · PERSONALIZED RESEARCH",
+          "title": "What if the model learned more from the individual?",
+          "summary": "I began exploring a personalized V4 model, using watch PPG recordings and quality-weighted calibration references. Rather than replacing Aurora V3 immediately, I introduced V4 alongside it so testers could compare the two estimates against separately entered cuff readings.",
+          "detailTitle": "Why keep both models?",
+          "details": [
+            "The side-by-side approach let me investigate how each model behaved using the same watch recording. Early research did not establish V4 as reliably more accurate than V3 or a cuff-only baseline. The differences helped identify questions for the next iteration."
+          ],
+          "kind": "standard"
+        },
+        {
+          "id": "bp-v4-1",
+          "date": "2026-11-21",
+          "label": "November 2026",
+          "status": "Published · Testing underway",
+          "topic": "BP V4.1 · EXPERIMENTAL TESTING",
+          "title": "V4.1 is published, and the testers are joining.",
+          "summary": "BP V4.1 Experimental has been published, and users have started joining the test. I now want to understand how the estimates behave across different people, using real-world watch recordings, cuff references and feedback rather than relying only on the initial research.",
+          "detailTitle": "What the next round of testing means",
+          "details": [
+            "Thank you to everyone who is joining the test. Paired watch and cuff measurements can help investigate reliability, calibration drift and systematic errors. Publication is a research milestone, not proof of improved accuracy or clinical validation. V4.1 remains experimental."
+          ],
+          "kind": "standard"
+        },
+        {
+          "id": "december-goal",
+          "date": "2026-12",
+          "label": "December 2026",
+          "status": "Hopeful target",
+          "topic": "BP · WHAT I HOPE COMES NEXT",
+          "title": "Could December bring a more stable BP release?",
+          "summary": "That is the hope, if all goes well. My goal for December is a more stable experimental BP model and, if the real-world evidence supports it, a broader release. It is a target, not a guarantee: validation, calibration reliability, signal quality and honest communication of uncertainty matter more than meeting a calendar date.",
+          "detailTitle": "What would make that possible?",
+          "details": [
+            "More paired watch/cuff measurements across different people and recording conditions, a careful review of the remaining systematic errors, and enough evidence that the next model behaves more consistently. If those checks do not support release, the responsible choice is to keep improving it rather than publish an unproven promise. A more stable experimental model would still not be a clinically validated alternative to a medical cuff."
+          ],
+          "kind": "future"
+        }
+      ]
     },
     "wearos-manager": {
       "eyebrow": "PROJECT 02 · ANDROID + WEAR OS · ACTIVE PRODUCT",
@@ -89,11 +191,28 @@
         "Recent work has centered on Android compatibility, connection reliability, incremental application details, discovery, performance, translations, and clear interactions on phone and watch screens."
       ],
       "steps": [
-        {"stage":"01 · Ongoing","title":"Keep connections predictable","description":"Polish automatic discovery, manual pairing, cancellation, efficient app details and permission handling across supported Android and Wear OS releases."},
-        {"stage":"02 · Planned exploration","title":"Watch screen mirroring","description":"Investigate a reliable way to show a connected watch screen on a phone. This is planned work, not a released feature or promised date."},
-        {"stage":"03 · Later","title":"Continue usability improvements","description":"Refine diagnostics, everyday workflows and accessibility as feedback comes in."}
+        {
+          "stage": "01 · Ongoing",
+          "title": "Keep connections predictable",
+          "description": "Polish automatic discovery, manual pairing, cancellation, efficient app details and permission handling across supported Android and Wear OS releases."
+        },
+        {
+          "stage": "02 · Planned exploration",
+          "title": "Watch screen mirroring",
+          "description": "Investigate a reliable way to show a connected watch screen on a phone. This is planned work, not a released feature or promised date."
+        },
+        {
+          "stage": "03 · Later",
+          "title": "Continue usability improvements",
+          "description": "Refine diagnostics, everyday workflows and accessibility as feedback comes in."
+        }
       ],
-      "facts": ["Released · Maintained", "Android phone and Wear OS companion", "Wireless ADB, package management, backup workflows and log collection", "Watch screen mirroring (feasibility and implementation pending)"]
+      "facts": [
+        "Released · Maintained",
+        "Android phone and Wear OS companion",
+        "Wireless ADB, package management, backup workflows and log collection",
+        "Watch screen mirroring (feasibility and implementation pending)"
+      ]
     }
   }
 }
